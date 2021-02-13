@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HockeyVenueManagement", "HockeyVenueManagement\HockeyVenueManagement.csproj", "{1C79F03C-9ACB-4DD2-B46B-DB23678E198B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C79F03C-9ACB-4DD2-B46B-DB23678E198B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C79F03C-9ACB-4DD2-B46B-DB23678E198B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C79F03C-9ACB-4DD2-B46B-DB23678E198B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1C79F03C-9ACB-4DD2-B46B-DB23678E198B}.Debug|x64.Build.0 = Debug|Any CPU
+		{1C79F03C-9ACB-4DD2-B46B-DB23678E198B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1C79F03C-9ACB-4DD2-B46B-DB23678E198B}.Debug|x86.Build.0 = Debug|Any CPU
+		{1C79F03C-9ACB-4DD2-B46B-DB23678E198B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C79F03C-9ACB-4DD2-B46B-DB23678E198B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C79F03C-9ACB-4DD2-B46B-DB23678E198B}.Release|x64.ActiveCfg = Release|Any CPU
+		{1C79F03C-9ACB-4DD2-B46B-DB23678E198B}.Release|x64.Build.0 = Release|Any CPU
+		{1C79F03C-9ACB-4DD2-B46B-DB23678E198B}.Release|x86.ActiveCfg = Release|Any CPU
+		{1C79F03C-9ACB-4DD2-B46B-DB23678E198B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56EB3F55-DDB2-414B-85E5-99E089C0DD60}
+	EndGlobalSection
+EndGlobal

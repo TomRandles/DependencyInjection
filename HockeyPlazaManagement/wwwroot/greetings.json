@@ -1,0 +1,14 @@
+{
+  "Greetings": [
+    "Hi, let's play some hockey!",
+    "Welcome to the finest hockey club in the west!",
+    "Welcome to hockey in the west!",
+    "We are the friendliest club in the west!"
+  ],
+  "LoginGreetings": [
+    "Welcome back {name}!",
+    "Good to see you again {name}!",
+    "Hi {name}! Ready for some hockey?",
+    "It's great to see you {name}!"
+  ]
+}
