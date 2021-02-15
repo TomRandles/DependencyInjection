@@ -1,6 +1,8 @@
 using HockeyVenueManagement.Configuration;
 using HockeyVenueManagement.Services;
+using HockeyVenueManagement.Services.Audit;
 using HockeyVenueManagement.Services.Greetings;
+using HockeyVenueManagement.Services.Messaging;
 using HockeyVenueManagement.Services.Time;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,20 +34,31 @@ namespace HockeyVenueManagement
 
             // Add weather forcaster service as singleton
             services.TryAddSingleton<IWeatherForecaster, WeatherForecaster>();
-            // services.Replace(ServiceDescriptor.Singleton<IWeatherForecaster, AmazingWeatherForecaster>());
+            services.Replace(ServiceDescriptor.Singleton<IWeatherForecaster, AmazingWeatherForecaster>());
             // services.RemoveAll<WeatherForecaster>();
 
-            // Add greeting
+            // Add greeting DI
             services.TryAddSingleton<GreetingService>();
             services.TryAddSingleton<IGreetingService>(sp =>
                 sp.GetRequiredService<GreetingService>());
 
-            // Add time service
+            // Add time service DI
             services.TryAddSingleton<IUtcTimeService, TimeService>();
 
-            // Add auditing
+            // Add auditing DI
             services.TryAddScoped(typeof(IAuditor<>), typeof(Auditor<>)); // open generic registration
 
+            // Add Messaging DI
+            services.TryAddSingleton<EmailService>();
+            services.TryAddSingleton<SMSService>();
+
+            services.AddSingleton<IMessagingService>(sp =>
+                new CompositeMessagingService(
+                    new IMessagingService[]
+                    {
+                        sp.GetRequiredService<EmailService>(),
+                        sp.GetRequiredService<SMSService>()
+                    })); // composite pattern
 
 
         }

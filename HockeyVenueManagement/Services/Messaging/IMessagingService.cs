@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 
-namespace HockeyVenueManagement.Services.Notification
+namespace HockeyVenueManagement.Services.Messaging
 {
-    public interface INotificationService
+    public interface IMessagingService
     {
         Task SendAsync(string message, string userId);
     }
